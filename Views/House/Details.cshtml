@@ -1,0 +1,17 @@
+﻿@model HousingSManagement.Models.House
+
+@{
+    ViewData["Title"] = "House Details";
+}
+
+<h2>House Details</h2>
+
+<table class="table">
+    <tr><th>Owner Name:</th><td>@Model.OwnerName</td></tr>
+    <tr><th>House Number:</th><td>@Model.HouseNumber</td></tr>
+    <tr><th>Block:</th><td>@Model.Block</td></tr>
+    <tr><th>Phone Number:</th><td>@Model.PhoneNumber</td></tr>
+</table>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back</a>
